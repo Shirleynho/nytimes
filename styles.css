@@ -1,0 +1,262 @@
+body {
+	font-family: georgia;
+}
+
+/*
+============== NAV ==================
+*/
+
+.nav-header {
+	position: fixed; 
+	width: 98%; 
+	height: 45px;
+	top: 0;
+	right: 0;
+	background-color: #fff;
+	border-bottom: 1px solid #ccc; 
+	z-index: 2; 
+}
+
+/*
+============== CONTAINER ==================
+*/
+
+.container {
+	position: relative;
+	width: 85%;
+	float: right;
+	box-shadow: 0 5px 10px #ccc;
+	padding: 100px 80px 0 80px;
+}
+
+/*
+============== HORIZONTAL LINE ==================
+*/
+
+.line {
+	height: 1px;
+	color: #666;
+	margin: 10px 0;
+}
+
+.end-line {
+	width: 40px;
+	color: #000;
+	float: left;
+}
+
+.double-line {
+	width: 100%;
+	border-left-style: none; 
+	border-bottom: 1px solid #666; 
+	border-top: 2px solid #666; 
+	height: 2px;
+	display: block;
+}
+
+/*
+============== HEADING ==================
+*/
+
+.gray {
+	color: #f6f6f6;
+}
+
+.title h3 {
+	text-transform: uppercase;
+	font-weight: bold; 
+	font-size: 13px;
+	font-family: sans-serif;
+}
+
+.title h1 {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 28px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+
+h6 {
+	display: inline-block;
+	padding-right: 8px;
+	font-size: 11px;
+}
+
+.author {
+	font-weight: bold;
+}
+
+/*
+============== FIGURES ==================
+*/
+
+figure {
+	padding: 40px 0;
+}
+
+.fig-caption {
+	color: #666;
+	font-size: 13px;
+	margin-top: 5px;
+	line-height: 18px;
+}
+
+.credit {
+	font-size: 11px;
+	display: block; 
+}
+
+.header-caption {
+	width: 60%;
+}
+
+.img-shift {
+	margin-left: 15%;
+	width: 500px;
+}
+
+.img-resize {
+	width: 500px;
+}
+
+/*
+============== ARTICLE ==================
+*/
+
+.article {
+	font-size: 16px; 
+	line-height: 24px;
+	margin-right: 35%;
+	margin-left: 15%;
+}
+
+h2 {
+	margin-bottom: 0;
+	font-weight: bold; 
+}
+
+/*
+============== ARTICLE DESCRIPTION IMG ==================
+*/
+
+.article-img {
+	margin: 20px 10% 20px 5%;
+	position: relative; 
+}
+
+.article-img img {
+	width: 100%;
+	padding: 20px 0;
+}
+
+.article-img h1 {
+	font-size: 18px; 
+	font-weight: bold; 
+	margin: 5px 0;
+}
+
+.article-img-desc {
+	color: #666;
+	font-size: 14px; 
+	line-height: 18px;
+}
+
+.img-captions {
+	position: absolute;
+	z-index: 1;
+	top: 240px;
+}
+
+.captions {
+	float: left;
+	width: 200px;
+	font-family: sans-serif;
+	font-size: 12px;
+	margin-right: 32px;
+	margin-bottom: 150px;
+	line-height: 16px;
+}
+
+.captions:nth-child(4n+0) {
+	margin-right: 0;
+}
+
+.img-captions span {
+	font-weight: bold; 
+}
+
+.img-credit {
+	margin-top: 10px; 
+	font-family: sans-serif;
+	color: #666;
+	font-size: 12px;
+}
+
+/*
+============== IFRAME ==================
+*/
+
+.vid {
+	position: relative;
+	left: 100px;
+	width: 640px;
+	margin-top: 40px;
+}
+
+.vid .credit {
+	display: inline;
+}
+
+/*
+============== END CREDIT ==================
+*/
+
+.end-credit {
+	display: block; 
+	margin-top: 30px;
+	font-family: arial, sans-serif; 
+	font-size: 11px;
+	line-height: 13px;
+	color: #ccc;
+}
+
+.end-credit a {
+	text-decoration: none; 
+	color: #ccc;
+}
+
+.end-credit a:hover {
+	text-decoration: underline; 
+}
+
+/*
+============== FOOTER ==================
+*/
+
+footer {
+	margin-top: 120px;
+	border-top: 1px double #000;
+	outline-top: 2px solid #699;
+}
+
+.col {
+	float: left;
+	margin-right: 60px;
+	margin-bottom: 10px;
+}
+
+.col h3 {
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 20px 0;
+}
+
+.col li {
+	font-size: 12px;
+	margin-bottom: 10px;
+	font-family: arial, sans-serif;
+
+}
