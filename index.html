@@ -7,11 +7,33 @@
 	<link rel="shortcut icon" href="http://static01.nyt.com/favicon.ico" />
 </head>
 <body>
-	<nav class="nav-header"></nav>
+
+	<nav class="nav-header">
+		<button type="button" class="button">
+			<div class="sprite" id="header-section"></div>
+			<span class="bold">Sections</span>
+		</button>
+			<ul class="nav">
+				<li>
+					<div class="sprite" id="subscription"></div>
+					<span class="bold">Home</span>
+				</li>
+				<li>
+					<div class="sprite" id="subscription"></div>
+					<span class="bold">Search</span>
+				</li>
+			</ul>
+		<img class="nyt-logo-heading" src="img/nyt-logo.svg">
+		<button type="button" class="settings-btn right">
+			<div class="sprite" id="settings"></div>
+		</button>
+		<button type="button" class="button blue right">Log In</button>
+
+	</nav>
 
 	<div class="container">
 <!-- =====================HEADER=============== -->
-
+	<div class="header-container">
 		<heading class="title">
 			<hr class="line">
 			<h3>Space and Cosmos</h3>
@@ -22,14 +44,13 @@
 		</heading>
 
 <!-- =====================FIGURE 1=============== -->
-
 		<figure>
-		<img src="img/18cosmos-master1050.jpg">
+		<img class="header-img" src="img/18cosmos-master1050.jpg">
 		<figcaption class="fig-caption header-caption"> Alan Guth was one of the first physicists to hypothesize the existence of inflation, which explains how the universe expanded so uniformly and so quickly in the instant after the Big Bang 13.8 billion years ago. <span class="credit">Rick Friedman for The New York Times</span> </figcaption>
 		</figure>
-
+	</div>
 <!-- =====================ARTICLE=============== -->
-
+	<div class="article-container">
 		<section class="article">
 			CAMBRIDGE, Mass. — One night late in 1979, an itinerant young physicist named Alan Guth, with a new son and a year’s appointment at Stanford, stayed up late with his notebook and equations, venturing far beyond the world of known physics.
 			<br><br>
@@ -47,7 +68,7 @@
 			<br><br>
 			If corroborated, Dr. Kovac’s work will stand as a landmark in science comparable to the recent discovery of dark energy pushing the universe apart, or of the Big Bang itself. It would open vast realms of time and space and energy to science and speculation.
 		</section>
-
+	</div>
 <!-- =====================ARTICLE IMAGE=============== -->
 
 		<section class="article-img">
@@ -81,7 +102,7 @@
 		</section>
 
 <!-- =====================ARTICLE=============== -->
-
+	<div class="article-container">
 		<section class="article">
 			Confirming inflation would mean that the universe we see, extending 14 billion light-years in space with its hundreds of billions of galaxies, is only an infinitesimal patch in a larger cosmos whose extent, architecture and fate are unknowable. Moreover, beyond our own universe there might be an endless number of other universes bubbling into frothy eternity, like a pot of pasta water boiling over.
 			<br><br>
@@ -135,7 +156,7 @@
 			“So we will need to wait and see before we jump up and down,” Dr. Krauss said.
 		</section>
 
-		<figure class="img-shift">
+		<figure>
 			<img class="img-resize" src="img/18cosmos-2-articleLarge.jpg">
 			<figcaption class="fig-caption">The Bicep2 telescope, in the foreground, was used to detect the faint spiraling gravity patterns — the signature of a universe being wrenched violently apart at its birth.<span class="credit"> Credit Steffen Richter/Associated Press </span>
 			</figcaption>
@@ -197,9 +218,10 @@
 		<section class="article end-credit">
 			A version of this article appears in print on March 18, 2014, on page A1 of the New York edition with the headline: Space Ripples Reveal Big Bang’s Smoking Gun. <a href="#">Order Reprints</a> | <a href="#">Today's Paper</a> | <a href="#">Subscribe</a> 
 		</section>
-
+	</div>
 		<footer>
 			<div class="double-line"></div>
+			<img class="nyt-logo" src="img/nyt-logo.svg">
 			<div class="col">
 				<h3>News</h3>
 				<ul>
@@ -296,14 +318,22 @@
 					</ul>
 				
 			</div>
-<!-- 			<div class="subscribe-footer">
+			<div class="subscribe-footer">
 				<h3>SUBSCRIBE</h3>
 				<ul>
-					<li><i id="times" class="icon"></i><span class="footer-bold">Times Premier</span></li>
-					<li><i id="home" class="icon"></i><span class="footer-bold">Home Delivery</span></li>
-					<li><i id="digital" class="icon"></i><span class="footer-bold">Digital Subscriptions</span></li>
-					<li><i id="nyt" class="icon"></i><span class="footer-bold">NYT Opinion</span></li>
-					<li><i id="crossword" class="icon"></i><span class="footer-bold">Crossword</span></li>
+					<li>
+						<div class="sprite" id="times"></div><span class="footer-bold">Times Premier</span>
+					</li>
+					<li>
+						<div class="sprite" id="delivery"></div><span class="footer-bold">Home Delivery</span>
+					</li>
+					<li>
+						<div class="sprite" id="subscription"></div><span class="footer-bold">Digital Subscriptions</span>
+					</li>
+					<li>
+						<div class="sprite" id="opinion"></div><span class="footer-bold">NYT Opinion</span></li>
+					<li>
+						<div class="sprite" id="crossword"></div><span class="footer-bold">Crossword</span></li>
 				</ul>
 				<ul class="small">
 						<li>Email Newsletters</li>
@@ -312,7 +342,7 @@
 					    <li>Corporate Subscriptions</li>
 					    <li>Education Rate</li>
 				</ul>
-				<hr class="light">
+				<hr class="line">
 				<ul class="small">
 				    <li>Mobile Applications</li>
 				    <li>Replica Edition</li>
@@ -320,7 +350,7 @@
 				</ul>
 
 
-			</div> -->
+			</div>
 
 		</footer>
 

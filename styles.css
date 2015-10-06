@@ -8,13 +8,75 @@ body {
 
 .nav-header {
 	position: fixed; 
-	width: 98%; 
-	height: 45px;
 	top: 0;
 	right: 0;
+	width: 96.5%;
+	height: 50px;
 	background-color: #fff;
 	border-bottom: 1px solid #ccc; 
 	z-index: 2; 
+}
+
+.button {
+	height: 30px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	float: left;
+	position: relative;
+	left: -15px;
+	top: 10px;
+	border-radius: 2px;
+}
+
+.bold {
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.nav {
+	position: relative;
+	top: 15px;
+	left: 10px;	
+	float: left;	
+}
+
+.nav li {
+	margin-right: 20px;
+	display: inline-block;
+}
+
+.nyt-logo-heading {
+	position: relative;
+	left: 250px;
+	top: 12px;	
+}
+
+.blue {
+	background-color: #6288A5;
+	border: 1px solid #4d7b9f;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.blue:hover {
+	background-color: #4d7b9f;
+}
+
+.settings-btn {
+	border: 0;
+	position: relative;
+	top: 18px;
+	left: -10px;
+}
+
+.right {
+	float: right;
+	display: inline-block;
 }
 
 /*
@@ -22,11 +84,23 @@ body {
 */
 
 .container {
-	position: relative;
 	width: 85%;
 	float: right;
+	border-left: 1px solid #ccc;
 	box-shadow: 0 5px 10px #ccc;
 	padding: 100px 80px 0 80px;
+}
+
+
+.header-container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.article-container {
+	position: relative;
+	left: 150px;
+	width: 550px;
 }
 
 /*
@@ -95,6 +169,10 @@ figure {
 	padding: 40px 0;
 }
 
+.header-img {
+	width: 100%;
+}
+
 .fig-caption {
 	color: #666;
 	font-size: 13px;
@@ -108,13 +186,9 @@ figure {
 }
 
 .header-caption {
-	width: 60%;
+	width: 700px;
 }
 
-.img-shift {
-	margin-left: 15%;
-	width: 500px;
-}
 
 .img-resize {
 	width: 500px;
@@ -127,8 +201,7 @@ figure {
 .article {
 	font-size: 16px; 
 	line-height: 24px;
-	margin-right: 35%;
-	margin-left: 15%;
+	
 }
 
 h2 {
@@ -141,12 +214,13 @@ h2 {
 */
 
 .article-img {
-	margin: 20px 10% 20px 5%;
 	position: relative; 
+	width: 930px;
+	left: 50px;
 }
 
 .article-img img {
-	width: 100%;
+	width: 900px;
 	padding: 20px 0;
 }
 
@@ -166,6 +240,7 @@ h2 {
 	position: absolute;
 	z-index: 1;
 	top: 240px;
+	width: 900px;
 }
 
 .captions {
@@ -199,9 +274,8 @@ h2 {
 
 .vid {
 	position: relative;
-	left: 100px;
+	left: -10px;
 	width: 640px;
-	margin-top: 40px;
 }
 
 .vid .credit {
@@ -235,28 +309,111 @@ h2 {
 */
 
 footer {
+	width: 1000px;
+	margin: 0 auto;
 	margin-top: 120px;
 	border-top: 1px double #000;
 	outline-top: 2px solid #699;
+	font-family: arial, sans-serif;
+}
+
+.nyt-logo {
+	clear: both;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 15px;
 }
 
 .col {
 	float: left;
-	margin-right: 60px;
-	margin-bottom: 10px;
+	margin: 20px 30px 20px 0;
 }
 
-.col h3 {
+footer h3 {
 	font-family: sans-serif;
 	text-transform: uppercase;
 	font-size: 12px;
 	font-weight: bold;
-	margin: 20px 0;
+	margin-bottom: 15px;
 }
 
 .col li {
 	font-size: 12px;
 	margin-bottom: 10px;
-	font-family: arial, sans-serif;
 
+}
+
+.subscribe-footer {
+	float: left;
+	border-left: 1px solid #ccc;
+	margin-top: 20px;
+	margin-left: 30px;
+	padding-left: 20px;
+}
+
+.subscribe-footer li {
+	margin-bottom: 10px;
+}
+
+.footer-bold {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.small {
+	font-size: 11px;
+	margin: 15px 0;
+}
+
+.small li {
+	margin-bottom: 5px;
+}
+
+/*
+============== ICON ==================
+*/
+
+.sprite {
+	background-image: url('img/sprite-no-repeat.png');
+	background-color: transparent;
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	height: 16px;
+	width: 16px; 
+}
+
+
+#times {
+	background-position: -327px -137px;
+}
+
+#delivery {
+	background-position: -410px -20px;
+}
+
+#subscription {
+	background-position: -258px -138px;
+}
+
+#opinion {
+	background-position: -400px -64px;
+	width: 15px;
+}
+
+#crossword {
+	background-position: -362px 0px;
+}
+
+#header-section {
+	background-position: -478px -108px; 
+	width: 14px;
+	height: 10px;
+}
+
+#settings {
+	background-position: -494px -106px;
+	width: 14px;
+	height: 14px;
 }
