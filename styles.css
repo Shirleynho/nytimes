@@ -10,11 +10,12 @@ body {
 	position: fixed; 
 	top: 0;
 	right: 0;
-	width: 96.5%;
+	width: inherit;
 	height: 50px;
 	background-color: #fff;
 	border-bottom: 1px solid #ccc; 
 	z-index: 2; 
+	text-align: center;
 }
 
 .button {
@@ -51,8 +52,8 @@ body {
 
 .nyt-logo-heading {
 	position: relative;
-	left: 250px;
-	top: 12px;	
+	left: -50px;
+	top: 15px;
 }
 
 .blue {
@@ -84,13 +85,17 @@ body {
 */
 
 .container {
-	width: 85%;
+	position: relative;
+	width: 95%;
 	float: right;
 	border-left: 1px solid #ccc;
 	box-shadow: 0 5px 10px #ccc;
-	padding: 100px 80px 0 80px;
 }
 
+.content-container {
+	padding: 100px 80px 0 80px;
+	
+}
 
 .header-container {
 	width: 90%;
